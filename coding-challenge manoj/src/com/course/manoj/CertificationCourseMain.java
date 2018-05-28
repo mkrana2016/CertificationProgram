@@ -12,12 +12,12 @@ public class CertificationCourseMain {
     	Map<String,String> courseMap = new HashMap<>();
     	Set<String> prerequsitiesList = new HashSet<>();
     	
-    	//get the user input
+    	//get the user input.
     	UserInputReader inputReader = new UserInputReader();
     	String inputCourse = inputReader.getUserInput();
     	
     	CertificationCourseReader courseReader = new CertificationCourseReader();
-    	//Reading the csv files into map and set
+    	//Reading the csv files into map and set.
     	courseMap = courseReader.getCourseMap();
     	prerequsitiesList = courseReader.getPrerequisites(prerequsitiesList, inputCourse);
         
